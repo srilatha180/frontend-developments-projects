@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-in">
+    <head>
+        <title>Smart shopping store</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="shoppingstore.css">
+
+    </head>
+    <body>
+        <div class="storename">
+            <h2 class="text-center">🛍️&nbsp;&nbsp;&nbsp;Smart store&nbsp;&nbsp;&nbsp;✨</h2>
+            <p class="text-center">💖 Everything You Love, All in One Place!</p>
+            <div class="menu">
+                <nav class="text-center">
+                    <a href="home.html">home</a>
+                    <a href="products.html">products</a>
+                    <a href="prices.html">prices</a>
+                    <a href="contact.html">contact</a>
+                </nav>
+            </div>
+        </div>
+        <div class="products">
+            <h3 class="text-center">Our products</h3>
+           
+        </div>
+            <div class="prod">
+                <div class="laptop">
+                    <div class="card" style="width: 250px;">
+                <img src="../assets/laptop.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="text-center">Laptop</h3>
+                    <p class="text-center" id="lapprice">&#8377;45000</p>
+                    <div class="but">
+                        <button class="btn btn-primary">Buy Now</button>
+                    <button class="btn btn-info" onclick="addToCart(45000)">Add to Card</button>
+                    <button class="btn btn-danger" onclick="removeFromCart(45000)">remove item</button>
+
+                    </div>
+                    
+                </div>
+
+                </div>
+                </div>
+                <div class="card" style="width:250px;">
+               <img src="../assets/ac.jpg" class="card-img-top" alt="Smart TV">
+
+                <div class="card-body">
+                <h3 class="text-center">AC</h3>
+              <p class="text-center" id="acprice">&#8377;35000</p>
+               <div class="but">
+            <button class="btn btn-primary">Buy Now</button>
+            <button class="btn btn-info" onclick="addToCart(35000)">Add to Cart</button>
+            <button class="btn btn-danger" onclick="removeFromCart(35000)">remove item</button>
+
+             </div>
+            </div>
+             </div>
+             <div class="card" style="width:250px;">
+               <img src="../assets/fridge.jpg" class="card-img-top" alt="Smart TV">
+
+                <div class="card-body">
+                <h3 class="text-center">Fridge</h3>
+              <p class="text-center" id="fridgeprice">&#8377;28000</p>
+               <div class="but">
+            <button class="btn btn-primary">Buy Now</button>
+            <button class="btn btn-info" onclick="addToCart(28000)">Add to Cart</button>
+            <button class="btn btn-danger" onclick="removeFromCart(28000)">remove item</button>
+
+             </div>
+            </div>
+             </div>
+             <div class="card" style="width:250px;">
+               <img src="../assets/cooler.webp" class="card-img-top" alt="Smart TV">
+
+                <div class="card-body">
+                <h3 class="text-center">Cooler</h3>
+              <p class="text-center" id="coolerprice">&#8377;23000</p>
+               <div class="but">
+            <button class="btn btn-primary">Buy Now</button>
+            <button class="btn btn-info" onclick="addToCart(23000)">Add to Cart</button>
+            <button class="btn btn-danger" onclick="removeFromCart(23000)">remove item</button>
+
+             </div>
+            </div>
+             </div>
+             <div class="card" style="width:250px;">
+               <img src="../assets/washing machine.jpg" class="card-img-top" alt="Smart TV">
+
+                <div class="card-body">
+                <h3 class="text-center">Washing machine</h3>
+              <p class="text-center" id="washingprice">&#8377;30000</p>
+               <div class="but">
+            <button class="btn btn-primary">Buy Now</button>
+            <button class="btn btn-info" onclick="addToCart(30000)">Add to Cart</button>
+            <button class="btn btn-danger" onclick="removeFromCart(30000)">remove item</button>
+
+             </div>
+            </div>
+             </div>
+             <div class="text-end p-2">
+                <h3 class="text-center">Cart🛒:<span id="cartCount">0</span></h3>
+                <h3 class="text-center">Total Amount: ₹<span id="totalAmount">0</span></h3>
+                
+           </div>
+             
+                
+          
+            
+            </div>
+
+            </div>
+            <script src="shoppingstore.js"></script>
+           
+
+       
+
+    </body>
+</html>
