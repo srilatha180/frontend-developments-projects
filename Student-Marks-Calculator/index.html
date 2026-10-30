@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang-en-in>
+    <head>
+        <title>Marks calculation</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="intro">
+           <div class="navbar navbar-expand-lg navbar-dark">
+            <div class="container d-flex align-items-center justify-content-between">
+                <h3 class="text-white mb-0">Results</h3>
+                <button type="button" class="btn btn-dark navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarlinks">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse gap-3" id="navbarlinks">
+                <a href="#" class="text-white text-decoration-none nav-link-custom">home</a>
+                <a href="#" class="text-white text-decoration-none nav-link-custom">Results</a>
+                <a href="#" class="text-white text-decoration-none nav-link-custom">contact</a>
+            </div>
+           </div>
+        </div>
+        <section class="hero">
+            <div class="container">
+                <h4 class="text-center text-dark mt-3">Welcome to student portal</h4>
+                <p class="text-center text-dark mt-2">Check your marks and grade!</p>
+                <center>
+                   <button class="btn btn-success mt-2" id="res">View total</button>
+                   <p id="result"></p>
+                </center>
+               
+
+            </div>
+        </section>
+        <section class="marks mt-3 pt-2 h-100">
+            <div class="container" id="myCon">
+                <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                        <div class="card h-90 shadow-sm text-center">
+                            <div class="card-body">
+                             <h5 class="card-title text-dark text-center mb-0">Check your grade</h5>
+                                <p class="text-center text-dark">Enter your details</p>
+                                <button class="btn btn-primary" id="grad">View your grade</button>
+                                <p id="gradeId"></p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                     <div class="col-12 col-md-6">
+                        <div class="card h-90 shadow-sm text-center">
+                            <div class="card-body">
+                             <h5 class="card-title text-dark text-center mb-0">Check your total and percentage</h5>
+                                <p class="text-center text-dark">Enter your details</p>
+                                <button class="btn btn-primary" id="pass">View your result</button>
+                                <p id="passId"></p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="register mt-3 pt-3">
+           
+                <div class="container">
+                    <h3 class="text-center text-dark mb-2">Student registration form</h3>
+                    <form class="text-dark" id="myForm">
+                        <label class="form-label">Enter Name (Full Name)</label>
+                        <input type="text" class="form-control" placeholder="Enter your name" id="name">
+                        <label class="form-label">Enter email</label>
+                        <input type="text" class="form-control" placeholder="enter email" id="mail">
+                        <label class="form-label">Enter HTML marks</label>
+                        <input type="number" class="form-control" placeholder="enter HTML marks" id="HTML">
+                        <label class="form-label">Enter CSS marks</label>
+                        <input type="number" class="form-control" placeholder="enter CSS marks" id="CSS">
+                        <label class="form-label">Enter Javascript marks</label>
+                        <input type="number" class="form-control" placeholder="enter javascript marks" id="javascript">
+                        <center>
+                         <button type="submit" class="btn btn-success mt-2" id="sub">Submit</button>
+                        </center>
+                        
+                    </form>
+                </div>
+           
+        </section>
+        <section class="container my-5">
+  <h2 class="mb-3">Results</h2>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover text-center align-middle">
+      <thead class="table-dark">
+        <tr>
+          <th>Name</th>
+          <th>HTML</th>
+          <th>CSS</th>
+          <th>Javascript</th>
+          <th>Total</th>
+          <th>Average</th>
+          <th>Grade</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody id="resultBody">
+        <tr>
+          <td>Priya Sharma</td>
+          <td>95</td><td>92</td><td>90</td>
+          <td>277</td><td>92.33</td><td>A+</td>
+          <td><span class="badge bg-success">Pass</span></td>
+        </tr>
+        <tr>
+          <td>Ravi Kumar</td>
+          <td>85</td><td>78</td><td>82</td>
+          <td>245</td><td>81.67</td><td>A</td>
+          <td><span class="badge bg-success">Pass</span></td>
+        </tr>
+        <tr>
+          <td>Anil Reddy</td>
+          <td>50</td><td>45</td><td>55</td>
+          <td>150</td><td>50.00</td><td>C</td>
+          <td><span class="badge bg-success">Pass</span></td>
+        </tr>
+        <tr>
+          <td>Sita Devi</td>
+          <td>60</td><td>30</td><td>50</td>
+          <td>140</td><td>46.67</td><td>C</td>
+          <td><span class="badge bg-danger">Fail</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+
+    </body>
+</html>

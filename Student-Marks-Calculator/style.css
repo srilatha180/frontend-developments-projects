@@ -1,0 +1,21 @@
+.intro{
+    background:linear-gradient(120deg,blue,purple) !important;
+    color:white;
+}
+.hero{
+    background: linear-gradient(100deg,rgb(236, 155, 169),rgb(164, 241, 164));
+}
+.marks{
+    background: linear-gradient(125deg,rgb(244, 172, 233));
+}
+.card:hover{
+    transform: translateY(-6px);
+}
+#myCon{
+    min-height: 200px !important;
+}
+#myForm{
+    border: 2px solid black;
+    margin-left: 325px;
+    width:750px;
+}
