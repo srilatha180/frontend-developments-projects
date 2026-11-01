@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en=in">
+    <head>
+        <title>Expenses tracker</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="text-center text-dark mb-0">Daily expenses tracker</h2>
+            <div class="expenses">
+                <form>
+                    <label><h5 class="text-center mb-0">Expenses</h5></label>
+                    <input type="text" name="txtName" class="form-control mb-1" placeholder="lunch" id="expensesId">
+                    <label><h5 class="text-center mb-0">Amount</h5></label>
+                    <input type="number" name="txtNumber" class="form-control mb-1" placeholder="&#8377;500" id="amountId">
+                    <label><h5 class="text-center mb-0">Category</h5></label>
+                    <input type="text" name="txtFood" class="form-control mb-1" placeholder="food" id="categoryId">
+                    <button class="btn btn-info w-100" id="myBtn" type="button">Add expenses</button>
+                   
+                </form>
+            </div>
+            <h4 class="text-dark text-center mt-2">My expenses</h4>
+            <p id="expensesList"></p>
+            <h4 class="text-success mt-2">Total expenses</h4>
+            <p id="totalExpenses">&#8377;0</p>
+            <h4 class="text-dark mt-2">Number of expenses:</h4>
+            <p id="expenseCount">0</p>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
