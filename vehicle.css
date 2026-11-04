@@ -1,0 +1,56 @@
+.card-body{
+    transition: transform 0.3s ease;
+    
+}
+.card-body:hover{
+    transform:translateY(-4px);
+     box-shadow: 0 5px 15px gray;
+   
+}
+.container{
+    background: linear-gradient(125deg,blue,purple);
+   
+}
+.slot{
+    display:flex;
+    margin-left:10px;
+}
+.intro h2{
+    color:white;
+    margin-bottom: 5px;
+}
+
+
+.intro{
+    width:55%;
+   
+
+}
+.pic{
+    width:50%;
+    height:400px;
+
+}
+.pic img{
+    width:100%;
+    height:400px;
+    margin-top: 50px;
+}
+.total{
+    background: linear-gradient(100deg,rgb(183, 243, 183),rgb(243, 173, 243));
+}
+button{
+    background-color: green;
+}
+
+    
+
+.available{
+    background: linear-gradient(90deg,rgb(242, 242, 127),rgb(121, 205, 238));
+}
+.available card-body:hover{
+     transform:translateY(-4px);
+     box-shadow: 0 5px 15px gray;
+   
+
+}
