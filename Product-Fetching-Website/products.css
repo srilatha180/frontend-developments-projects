@@ -1,0 +1,31 @@
+.intro{
+    background-color: rgb(222, 251, 187);
+    margin-top: 10px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.intro h2{
+    text-decoration:underline;
+    margin-bottom: 55px;
+}
+.intro1{
+    background-color: rgb(244, 174, 225);
+    margin-top:10px;
+}
+#products{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.product-card{
+    border: 3px solid black;
+    margin-left: 8px;
+    
+
+
+}
+.product-card img{
+    border: black;
+    margin: 3px 6px 5px 5px;
+}
